@@ -227,7 +227,7 @@ function Schedule() {
           formatDay={formatDay}
           onClickDay={onClickDay}
           selectRange={true}
-        //   value={selectedRange}
+          //   value={selectedRange}
           tileClassName={tileClassNameRange2}
         />
       </div>
