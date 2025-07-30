@@ -1,13 +1,11 @@
 import Header from "./components/layout/Header";
-import Schedule from "./pages/Schedule";
-import Slide from "./pages/Slide";
+import JoinPage from "./pages/JoinPage";
 
 function App() {
   return (
     <div>
       <Header />
-      {/* <Schedule /> */}
-      <Slide />
+      <JoinPage />
     </div>
   );
 }
