@@ -2,9 +2,36 @@
   width: 80%;
   margin: 0 auto;
   background-color: aliceblue;
-  min-height: 200px;
+  position: relative;
 }
 .sw_visual {
+  min-height: 200px;
   width: 100%;
   height: 100%;
+}
+.sw_visual .swiper-slide {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  overflow: hidden;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
 }
