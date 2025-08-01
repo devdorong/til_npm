@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { kkoLoginAtom } from "../atoms/kkoLoginAtom";
 import { getKakaoLoginLink } from "../kko/kkoapi";
+import { getGoogleLoginLink } from "../google/googleapi";
 
 function LoginPage() {
   //js
@@ -15,6 +16,10 @@ function LoginPage() {
     setUserInfo({ id: "", nickname: "", email: "", thumbnail_image_url: "" });
     navigate("/");
   };
+  // 구글 로그인
+  const googleLogin = () => {
+    getGoogleLoginLink();
+  };
   //jsx
   return (
     <div>
@@ -24,6 +29,9 @@ function LoginPage() {
       ) : (
         <Link to={kkoLoginUrl}>카카오 로그인</Link>
       )}
+      <div>
+        <button onClick={googleLogin}>구글로그인</button>
+      </div>
     </div>
   );
 }
