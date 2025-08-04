@@ -1,17 +1,18 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import After from "./pages/member/After";
-import AfterGoogle from "./pages/member/AfterGoogle";
+import { useEffect } from "react";
+import { getTodos } from "./apis/todoApi";
 
 function App() {
+  //js
+
+  useEffect(() => {
+    getTodos();
+  }, []);
+
+  //jsx
   return (
-    <Router>
-      <LoginPage />
-      <Routes>
-        <Route path="/member/kko" element={<After />}></Route>
-        <Route path="/member/google" element={<AfterGoogle />}></Route>
-      </Routes>
-    </Router>
+    <div>
+      <h1>App</h1>
+    </div>
   );
 }
 
