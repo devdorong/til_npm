@@ -102,7 +102,7 @@ export default App;
 
 - 최소한 외부 함수로 빼준다.
 
-```js
+```jsx
 import axios from "axios";
 import { useEffect } from "react";
 
