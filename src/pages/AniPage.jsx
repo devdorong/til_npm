@@ -1,19 +1,3 @@
-# Anime.js
-
-- https://animejs.com/
-- https://velog.io/@bluestragglr/Anime.js-사용하기
-- https://www.npmjs.com/package/animejs
-- 설치하기
-
-```bash
-npm i animejs
-```
-
-## 폴더 및 파일구성
-
-- /src/pages/AniPage.jsx
-
-```jsx
 import { animate, createDraggable } from "animejs";
 import { useEffect, useRef } from "react";
 
@@ -92,4 +76,3 @@ function AniPage() {
 }
 
 export default AniPage;
-```

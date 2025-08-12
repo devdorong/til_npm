@@ -1,10 +1,10 @@
-import AddFrom from "./components/editor/AddFrom";
+import AniPage from "./pages/AniPage";
 
 function App() {
   return (
     <div>
-      <h1>Editor</h1>
-      <AddFrom />
+      <h1>Anime</h1>
+      <AniPage />
     </div>
   );
 }
